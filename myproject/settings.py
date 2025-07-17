@@ -149,3 +149,10 @@ SESSION_COOKIE_SAMESITE = 'Lax'  # Or 'None' if using HTTPS
 SESSION_COOKIE_SECURE = False    # True only if using HTTPS
 
 CSRF_TRUSTED_ORIGINS = ["https://tododatamanagement.netlify.app/"]
+
+
+SESSION_COOKIE_SECURE = True             # Required for HTTPS
+SESSION_COOKIE_SAMESITE = 'None'         # Required for cross-origin cookies
+
+CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_SAMESITE = 'None'            # Required for cross-origin POST/PUT
